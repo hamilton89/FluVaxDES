@@ -13,6 +13,8 @@ Assumptions:
 2. Patients visit Clinic A at different times throughout the day with the majority arriving between 2-3pm (hour 5). To approximate the arrival schedule, we assume 50 patients arrive in hour 1, 100 in hour 2, 150 in hour 3, 200 in hour 4, 300 in hour 5, 250 in hour 6, 150 in hour 7, and 100 in hour 8.
 3. Upon arrival, patients will balk (leave without getting vaccinated) if the queue size is over 30 people.
 4. It takes approximately 4 minutes to fill out paperwork and 2 minutes to get vaccinated so the total service time is roughly 6 minutes.
+5. We assume patients arrive at even intervals over the hour. For example, in an hour with 300 patients, a patient will arrive roughly every 0.2 minutes. This is because simy_helpers uses the mean time between arrivals in order to schedule when entities enter the simulation.
+6. To introduce stochasticity, we assign exponential distributions around the balk tolerance, mean time between arrivals, and mean service time.
 
 Workflow:
 
