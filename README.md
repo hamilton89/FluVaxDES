@@ -18,7 +18,7 @@ Workflow:
 
 Run FluVaxDES.py. This file contains all the code with detailed comments and is separated into the following sections: 
 1. Globals: Define parameters (MEAN_SERVICE_TIME, BALK_TOLERANCE, and SIMULATION_LENGTH)
-2. Simpy classes: Define classes for Entity, Resource, and Source (see https://github.com/bambielli/simpy_helpers/blob/master/Using_Simpy_Helpers_Package.ipynb for descriptions)
+2. Simpy classes: Define classes for Entity, Resource, and Source (see Resource 1 below for descriptions)
 3. Loop through hours in a day: Loop through the number of patients each hour (Assumption 2) and record maximum wait times as a function of the number of nurses working per hour. Outputs table_maxwait_perhour_pernurses.csv.
 4. Run for peak hour: Run the simulation for the peak hour with 300 patients and 4 nurses and record the number of patients arrived, balked, and vaccinated as well as maximum wait time and average wait time.
 5. Visualizations for peak hour: Outputs tables and graphs for peak hour (See Output).
@@ -31,6 +31,15 @@ Output:
 4. graph_wait_times.png: Line graph of max wait time over time.
 5. graph_arrived_balked_vaccinated.png: Line graph of arrived, balked, and vaccinated over time. NOTE: This graph overestimates the number of patients vaccinated as it included patients still waiting at the end of the simulation.
 6. histogram_wait_times.png: Histogram of the number of students per wait time.
+
+Resources:
+
+The following were consulted in building the model:
+1. GitHub tutorial of simpy_helpers: https://github.com/bambielli/simpy_helpers/blob/master/Using_Simpy_Helpers_Package.ipynb
+2. Video tutorial of simpy_helpers: https://www.youtube.com/watch?app=desktop&v=TALKZZV0TiU
+3. GitHub CoPilot was used to figure out how to implement balking into the process function.
+
+
 
 
 
