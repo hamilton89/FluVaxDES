@@ -5,7 +5,7 @@ A university requires all affiliates to receive the flu vaccine and has clinics 
 
 Methods: 
 
-Using the Simpy library and simpy_helpers package in python, we simulate one day at Clinic A, recording maximum wait times as a function of the number of patients visiting per hour and the number of nurses working per hour. Results indicate how many nurses are needed each hour in order to keep wait times under 30 minutes. Then we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. 
+Using the Simpy library and simpy_helpers package in python, we simulate one day at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. Results indicate how many nurses are needed each hour in order to keep wait times under 30 minutes. Then we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. 
 
 Assumptions:
 
