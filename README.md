@@ -5,13 +5,9 @@ By: Alisa Hamilton, Emi Siler and Parikshit Ranjeet Raje
 
 Completed in partial fullfillment of the course Operation Research
 
-Problem description: 
+Problem description: A university requires all affiliates to receive the flu vaccine and has clinics open on different days and campuses during the flu season. Clinic A is open four days and sees 800-1300 patients per day and has four nurses administering vaccinations each day. Students have reported waiting over 30 minutes to get vaccinated at Clinic A. We want to determine how many nurses are needed each hour to keep wait times under 30 minutes.
 
-A university requires all affiliates to receive the flu vaccine and has clinics open on different days and campuses during the flu season. Clinic A is open four days and sees 800-1300 patients per day and has four nurses administering vaccinations each day. Students have reported waiting over 30 minutes to get vaccinated at Clinic A. We want to determine how many nurses are needed each hour to keep wait times under 30 minutes.
-
-Methods: 
-
-We use the Simpy library and simpy_helpers package in python to build a Discrete Event Simulation (DES). First, we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. Second, we simulate one day (8 hours) at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. 
+Methods: We use the Simpy library and simpy_helpers package in python to build a Discrete Event Simulation (DES). First, we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. Second, we simulate one day (8 hours) at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. 
 
 Assumptions:
 
