@@ -5,7 +5,7 @@ A university requires all affiliates to receive the flu vaccine and has clinics 
 
 Methods: 
 
-Using the Simpy library and simpy_helpers package in python, we simulate one day at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. Results indicate how many nurses are needed each hour in order to keep wait times under 30 minutes. Then we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. 
+We use the Simpy library and simpy_helpers package in python to build a Discrete Event Simulation. First, we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. Second, we simulate one day (8 hours) at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. 
 
 Assumptions:
 
@@ -13,26 +13,25 @@ Assumptions:
 2. Patients visit Clinic A at different times throughout the day with the majority arriving between 2-3pm (hour 5). To approximate the arrival schedule, we assume 50 patients arrive in hour 1, 100 in hour 2, 150 in hour 3, 200 in hour 4, 300 in hour 5, 250 in hour 6, 150 in hour 7, and 100 in hour 8.
 3. Upon arrival, patients will balk (leave without getting vaccinated) if the queue size is over 30 people.
 4. It takes approximately 4 minutes to fill out paperwork and 2 minutes to get vaccinated so the total service time is roughly 6 minutes.
-5. We assume patients arrive at even intervals over the hour. For example, in an hour with 300 patients, a patient will arrive roughly every 0.2 minutes. This is because simy_helpers uses the mean time between arrivals in order to schedule when entities enter the simulation.
+5. We assume patients arrive at even intervals over the hour. For example, in an hour with 300 patients, a patient will arrive roughly every 0.2 minutes. This is because simy_helpers uses the mean time between arrivals to schedule when entities enter the simulation.
 6. To introduce stochasticity, we assign exponential distributions around the balk tolerance, mean time between arrivals, and mean service time.
 
 Workflow:
 
-Run FluVaxDES.py. This file contains all the code with detailed comments and is separated into the following sections: 
-1. Globals: Define global parameters and create counters and lists for collecting data.
-2. Simpy classes: Define classes for Entity, Resource, and Source (see Reference 1 below for descriptions)
-3. Loop through hours in a day: Loop through the number of patients each hour (Assumption 2) and record maximum wait times as a function of the number of nurses working per hour. Outputs table_maxwait_perhour_pernurses.csv.
-4. Run for peak hour: Run the simulation for the peak hour with 300 patients and 4 nurses and record the number of patients arrived, balked, and vaccinated as well as maximum wait time and average wait time.
-5. Visualizations for peak hour: Outputs tables and graphs for peak hour (See Output).
+Run FluVaxDES.py. This file contains all code with detailed comments and is separated into the following sections: 
+1. Simpy classes: Define classes for Entity, Resource, and Source (see Reference 1 below for descriptions)
+2. Run for peak hour: Run the simulation for the peak hour with 300 patients and 4 nurses and record the number of patients arrived, balked, and vaccinated as well as maximum wait time and average wait time.
+3. Visualizations for peak hour: Outputs tables and graphs for peak hour (See Output).
+4. Loop through hours in a day: Loop through the number of patients each hour (Assumption 2) and record maximum wait times as a function of the number of nurses working per hour. Outputs table_maxwait_perhour_pernurses.csv.
 
 Output:
 
-1. table_maxwait_perhour_pernurses.csv: Maximum wait time as a function of the number of patients in the hour and the number of nurses working that hour.
-2. table_peakhour_stats.csv: Results for a simulation of the peak hour with 300 patients and 4 nurses.
-3. graph_queue_size.png: Line graph of queue size over time.
-4. graph_wait_times.png: Line graph of max wait time over time.
-5. graph_arrived_balked_vaccinated.png: Line graph of arrived, balked, and vaccinated over time. NOTE: This graph overestimates the number of patients vaccinated as it included patients still waiting at the end of the simulation.
-6. histogram_wait_times.png: Histogram of the number of students per wait time.
+1. table_peakhour_stats.csv: Results for a simulation of the peak hour with 300 patients and 4 nurses.
+2. graph_queue_size.png: Line graph of queue size over time.
+3. graph_wait_times.png: Line graph of max wait time over time.
+4. graph_arrived_balked_vaccinated.png: Line graph of arrived, balked, and vaccinated over time. NOTE: This graph overestimates the number of patients vaccinated as it included patients still waiting at the end of the simulation.
+5. histogram_wait_times.png: Histogram of the number of students per wait time.
+6. table_maxwait_perhour_pernurses.csv: Maximum wait time as a function of the number of patients in the hour and the number of nurses working that hour.
 
 References:
 
