@@ -19,7 +19,7 @@ Assumptions:
 Workflow:
 
 Run FluVaxDES.py. This file contains all the code with detailed comments and is separated into the following sections: 
-1. Globals: Define parameters (MEAN_SERVICE_TIME, BALK_TOLERANCE, and SIMULATION_LENGTH)
+1. Globals: Define global parameters and create counters and lists for collecting data.
 2. Simpy classes: Define classes for Entity, Resource, and Source (see Reference 1 below for descriptions)
 3. Loop through hours in a day: Loop through the number of patients each hour (Assumption 2) and record maximum wait times as a function of the number of nurses working per hour. Outputs table_maxwait_perhour_pernurses.csv.
 4. Run for peak hour: Run the simulation for the peak hour with 300 patients and 4 nurses and record the number of patients arrived, balked, and vaccinated as well as maximum wait time and average wait time.
