@@ -25,7 +25,7 @@ Run FluVaxDES.py. This file contains all the code with detailed comments and is 
 
 Output:
 
-1. table_maxwait_perhour_pernurses.csv: Maximum waiting time as a function of the number of patients in the hour and the number of nurses working that hour.
+1. table_maxwait_perhour_pernurses.csv: Maximum wait time as a function of the number of patients in the hour and the number of nurses working that hour.
 2. table_peakhour_stats.csv: Results for a simulation of the peak hour with 300 patients and 4 nurses.
 3. graph_queue_size.png: Line graph of queue size over time.
 4. graph_wait_times.png: Line graph of max wait time over time.
