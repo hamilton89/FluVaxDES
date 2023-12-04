@@ -34,7 +34,7 @@ Output:
 
 Resources:
 
-The following were consulted in building the model:
+The following resources were consulted in building the model:
 1. GitHub tutorial of simpy_helpers: https://github.com/bambielli/simpy_helpers/blob/master/Using_Simpy_Helpers_Package.ipynb
 2. Video tutorial of simpy_helpers: https://www.youtube.com/watch?app=desktop&v=TALKZZV0TiU
 3. GitHub CoPilot was used to figure out how to implement balking into the process function.
