@@ -1,7 +1,7 @@
 # FluVaxDES
 Optimizing Flu Clinic Staffing Schedule
 
-By: Alisa Hamilton, Emi Siler, and Parikshit Ranjeet Raje 
+Alisa Hamilton, Emi Siler, and Parikshit Ranjeet Raje 
 
 Final Project for the course Operations Research at the Whiting School of Engineering, Johns Hopkins University
 
