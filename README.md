@@ -5,7 +5,7 @@ A university requires all affiliates to receive the flu vaccine and has clinics 
 
 Methods: 
 
-We use the Simpy library and simpy_helpers package in python to build a Discrete Event Simulation. First, we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. Second, we simulate one day (8 hours) at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. 
+We use the Simpy library and simpy_helpers package in python to build a Discrete Event Simulation (DES). First, we simulate the peak hour at Clinic A with the current number of nurses (4) and plot the number of patients arrived, balked, and vaccinated over the course of the the hour. Second, we simulate one day (8 hours) at Clinic A and record maximum wait times as a function of the number of patients arriving per hour and the number of nurses working per hour. 
 
 Assumptions:
 
