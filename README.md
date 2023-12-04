@@ -1,8 +1,9 @@
 # FluVaxDES
 Optimizing Flu Clinic Staffing Schedule
-By: Alisa Hamilton, Emi Siler and Parikshit Ranjeet Raje
-Completed in partial fullfillment of the course Operation Research
 
+By: Alisa Hamilton, Emi Siler and Parikshit Ranjeet Raje
+
+Completed in partial fullfillment of the course Operation Research
 
 Problem description: 
 
