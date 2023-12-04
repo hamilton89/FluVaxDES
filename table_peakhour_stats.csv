@@ -1,0 +1,2 @@
+Hour,No. of pations,No. of nurses,Arrived,Balked,Served,Still waiting,Max wait time,Mean wait time
+5.0,300.0,4.0,286.0,286.0,286.0,35.0,47.949627958943736,3.0488135479753953
