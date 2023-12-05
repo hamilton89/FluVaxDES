@@ -3,7 +3,7 @@ Title: Optimizing Flu Clinic Staffing Schedule
 
 Authors: Alisa Hamilton, Emi Siler, and Parikshit Ranjeet Raje 
 
-Final Project for the course Operations Research at the Whiting School of Engineering, Johns Hopkins University
+Final project for the course Operations Research at the Whiting School of Engineering, Johns Hopkins University
 
 Problem description: A university requires all affiliates to receive the flu vaccine and has clinics open on different days and campuses during the flu season. Clinic A is open four days and sees 800-1300 patients per day and has four nurses administering vaccinations each day. Students have reported waiting over 30 minutes to get vaccinated at Clinic A. We want to determine how many nurses are needed each hour to keep wait times under 20 minutes.
 
