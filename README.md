@@ -21,7 +21,7 @@ Methods: We use the Simpy library and simpy_helpers package in python to build a
 3. Scenario 3: Busy hour with 300 patients, 4 nurses, service time of 2 minutes, and balk tolerance of 50
 4. Scenario 4: Busy hour with 300 patients, 4 nurses, service time of 6 minutes, and balk tolerance of 30
 
-Finally, we run the simulation for 8 hours in the day and record max wait times as a function of the number of patients arriving in that hour and the number of nurses working that hour. For this run, we assume a mean balk tolerance of 30 and a mean service time of 2 minutes.
+Finally, we run the simulation for 8 hours in the day and record max wait times and pateints vaccinated as a function of the number of patients arriving in that hour and the number of nurses working that hour. For these runs, we assume a mean balk tolerance of 30 and a mean service time of 2 minutes.
 
 Workflow:
 
@@ -31,7 +31,7 @@ Run FluVaxDES.py. This file contains all code with detailed comments and is sepa
 3. Base model: Run the model without any stochasticity or balking.
 4. Simpy classes with stochasticity: Redefine Simpy classes to include distributions around key parameters.
 5. Scenarios: Run the model with stochasticity for scenarios 1-4
-6. Loop through hours in a day: Loop through the number of patients each hour (Assumption 2) and record maximum wait times as a function of the number of nurses working per hour. 
+6. Loop through hours in a day: Loop through the number of patients each hour (Assumption 2) and record maximum wait time and patients vaccinated as a function of the number of nurses working per hour. 
 
 Outputs:
 
@@ -41,7 +41,8 @@ The following tables and figures are exported for the base model, base model wit
 3. [scenario]_graph_wait_times.png: Line graph of max wait time over time.
 4. [scenario]_graph_arrived_balked_vaccinated.png: Line graph of arrived, balked, and vaccinated over time. NOTE: This graph overestimates the number of patients vaccinated as it included patients still waiting at the end of the simulation.
 5. [scenario]_histogram_wait_times.png: Histogram of the number of students per wait time.
-6. table_maxwait_perhour_pernurses.csv: Maximum wait time as a function of the number of patients in the hour and the number of nurses working that hour.
+6. table_maxwait_perhour_pernurses.csv: Maximum wait time each hour as a function of the number of patients in the hour and the number of nurses working that hour.
+7. table_served_perhour_pernurses.csv: Patients vaccinated each hour as a function of the number of patients in the hour and the number of nurses working that hour.
 
 References:
 
@@ -49,11 +50,5 @@ The following resources were used in building the model:
 1. GitHub tutorial on simpy_helpers: https://github.com/bambielli/simpy_helpers/blob/master/Using_Simpy_Helpers_Package.ipynb
 2. Video tutorial on simpy_helpers: https://www.youtube.com/watch?app=desktop&v=TALKZZV0TiU
 3. GitHub CoPilot was used to figure out how to implement balking into the process function.
-
-
-
-
-
-
 
 
